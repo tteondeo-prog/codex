@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>모바일 3D 축구 게임</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game">
+      <header class="hud">
+        <div class="title">모바일 3D 축구</div>
+        <div class="score">
+          <span id="home-score">0</span>
+          <span class="divider">:</span>
+          <span id="away-score">0</span>
+        </div>
+      </header>
+
+      <main class="arena">
+        <div class="scene" id="scene">
+          <div class="pitch">
+            <div class="field"></div>
+            <div class="goal goal-top"></div>
+            <div class="goal goal-bottom"></div>
+            <div class="player" id="player"></div>
+            <div class="ball" id="ball"></div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="controls">
+        <div class="dpad">
+          <button class="btn" data-dir="up">▲</button>
+          <div class="row">
+            <button class="btn" data-dir="left">◀</button>
+            <button class="btn" data-dir="down">▼</button>
+            <button class="btn" data-dir="right">▶</button>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn kick" id="kick">슛</button>
+          <button class="btn reset" id="reset">리셋</button>
+        </div>
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
