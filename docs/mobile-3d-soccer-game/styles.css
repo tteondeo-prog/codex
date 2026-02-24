@@ -128,6 +128,10 @@ body {
   box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
 }
 
+.opponent {
+  background: radial-gradient(circle at 30% 30%, #fff, #ff4d4d 55%, #c20000);
+}
+
 .ball {
   width: 24px;
   height: 24px;
